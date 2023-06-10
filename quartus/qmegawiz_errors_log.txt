@@ -1,0 +1,6 @@
+
+
+C:/Users/ikui753/OneDrive - The University of Auckland/Documents/GitHub/Flappy-Bird-DE0-CV/quartus/pll.v
+
+Apr 19 12PM:59:54>: Megafunction PLL Intel FPGA IP v18.1 is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

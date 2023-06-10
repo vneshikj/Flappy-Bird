@@ -1,0 +1,142 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 2019  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+*/
+(header "symbol" (version "1.2"))
+(symbol
+	(rect 16 16 320 208)
+	(text "pipes" (rect 5 0 28 17)(font "Intel Clear" (font_size 6)))
+	(text "inst" (rect 8 171 24 188)(font "Intel Clear" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "pause_switch" (rect 0 0 79 19)(font "Intel Clear" (font_size 8)))
+		(text "pause_switch" (rect 21 27 100 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 32)(pt 16 32))
+	)
+	(port
+		(pt 0 48)
+		(input)
+		(text "clk" (rect 0 0 16 19)(font "Intel Clear" (font_size 8)))
+		(text "clk" (rect 21 43 37 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 48)(pt 16 48))
+	)
+	(port
+		(pt 0 64)
+		(input)
+		(text "level[1..0]" (rect 0 0 59 19)(font "Intel Clear" (font_size 8)))
+		(text "level[1..0]" (rect 21 59 80 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 64)(pt 16 64)(line_width 3))
+	)
+	(port
+		(pt 0 80)
+		(input)
+		(text "init" (rect 0 0 18 19)(font "Intel Clear" (font_size 8)))
+		(text "init" (rect 21 75 39 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 80)(pt 16 80))
+	)
+	(port
+		(pt 0 96)
+		(input)
+		(text "vert_sync" (rect 0 0 56 19)(font "Intel Clear" (font_size 8)))
+		(text "vert_sync" (rect 21 91 77 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 96)(pt 16 96))
+	)
+	(port
+		(pt 0 112)
+		(input)
+		(text "pixel_row[9..0]" (rect 0 0 87 19)(font "Intel Clear" (font_size 8)))
+		(text "pixel_row[9..0]" (rect 21 107 108 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 112)(pt 16 112)(line_width 3))
+	)
+	(port
+		(pt 0 128)
+		(input)
+		(text "pixel_column[9..0]" (rect 0 0 108 19)(font "Intel Clear" (font_size 8)))
+		(text "pixel_column[9..0]" (rect 21 123 129 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 128)(pt 16 128)(line_width 3))
+	)
+	(port
+		(pt 0 144)
+		(input)
+		(text "random_index[3..0]" (rect 0 0 115 19)(font "Intel Clear" (font_size 8)))
+		(text "random_index[3..0]" (rect 21 139 136 158)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 144)(pt 16 144)(line_width 3))
+	)
+	(port
+		(pt 0 160)
+		(input)
+		(text "game_state[1..0]" (rect 0 0 100 19)(font "Intel Clear" (font_size 8)))
+		(text "game_state[1..0]" (rect 21 155 121 174)(font "Intel Clear" (font_size 8)))
+		(line (pt 0 160)(pt 16 160)(line_width 3))
+	)
+	(port
+		(pt 304 32)
+		(output)
+		(text "pipe_on" (rect 0 0 48 19)(font "Intel Clear" (font_size 8)))
+		(text "pipe_on" (rect 235 27 283 46)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 32)(pt 288 32))
+	)
+	(port
+		(pt 304 48)
+		(output)
+		(text "health_pickup_on" (rect 0 0 105 19)(font "Intel Clear" (font_size 8)))
+		(text "health_pickup_on" (rect 178 43 283 62)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 48)(pt 288 48))
+	)
+	(port
+		(pt 304 64)
+		(output)
+		(text "invincibility_pickup_on" (rect 0 0 136 19)(font "Intel Clear" (font_size 8)))
+		(text "invincibility_pickup_on" (rect 147 59 283 78)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 64)(pt 288 64))
+	)
+	(port
+		(pt 304 80)
+		(output)
+		(text "death_pickup_on" (rect 0 0 102 19)(font "Intel Clear" (font_size 8)))
+		(text "death_pickup_on" (rect 181 75 283 94)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 80)(pt 288 80))
+	)
+	(port
+		(pt 304 96)
+		(output)
+		(text "pipes_powerups_on" (rect 0 0 119 19)(font "Intel Clear" (font_size 8)))
+		(text "pipes_powerups_on" (rect 164 91 283 110)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 96)(pt 288 96))
+	)
+	(port
+		(pt 304 112)
+		(output)
+		(text "rgb_out[11..0]" (rect 0 0 84 19)(font "Intel Clear" (font_size 8)))
+		(text "rgb_out[11..0]" (rect 199 107 283 126)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 112)(pt 288 112)(line_width 3))
+	)
+	(port
+		(pt 304 128)
+		(output)
+		(text "score_pulse" (rect 0 0 69 19)(font "Intel Clear" (font_size 8)))
+		(text "score_pulse" (rect 214 123 283 142)(font "Intel Clear" (font_size 8)))
+		(line (pt 304 128)(pt 288 128))
+	)
+	(drawing
+		(rectangle (rect 16 16 288 176))
+	)
+)
